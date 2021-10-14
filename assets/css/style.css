@@ -8,6 +8,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 body {
   background-color: #fff;
   color: #333;
@@ -45,6 +47,8 @@ a {
 a:hover {
   color: #92d283;
 }
+
+
 
 ul {
   letter-spacing: 1px;
@@ -151,7 +155,8 @@ span {
   text-decoration: none;
 }
 #header #logo h1 a span {
-  color: #71c55d;
+  color: #006996;
+  font-family: "Segoe UI Bold", sans-serif;
 }
 #header #logo img {
   padding: 0;
@@ -169,6 +174,36 @@ span {
 /**
 * Desktop Navigation 
 */
+
+
+@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Segoe UI'), url('https://fonts.cdnfonts.com/s/15051/Segoe UI.woff') format('woff');
+}
+@font-face {
+  font-family: 'Segoe UI';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Segoe UI'), url('https://fonts.cdnfonts.com/s/15051/Segoe UI Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Segoe UI'), url('https://fonts.cdnfonts.com/s/15051/Segoe UI Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Segoe UI';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Segoe UI'), url('https://fonts.cdnfonts.com/s/15051/Segoe UI Bold Italic.woff') format('woff');
+}
+         
+
 .navbar {
   padding: 0;
 }
@@ -187,9 +222,10 @@ span {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI Bold", sans-serif;
   font-size: 15px;
-  color: #222;
+  color: #006996;
+  font-weight: bold;
   white-space: nowrap;
   transition: 0.3s;
   letter-spacing: 0;
@@ -379,8 +415,8 @@ span {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  font-family: "Philosopher", sans-serif;
-  color: #71c55d;
+  font-family: "Segoe UI", sans-serif;
+  color: #7db928;
 }
 @media (max-width: 768px) {
   #hero h1 {
@@ -392,7 +428,7 @@ span {
   color: #777;
   margin-bottom: 30px;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 300;
 }
 @media (max-width: 768px) {
@@ -407,7 +443,7 @@ span {
   margin-bottom: 30px;
 }
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 13px;
@@ -417,13 +453,13 @@ span {
   border-radius: 50px;
   transition: 0.5s;
   margin-bottom: 30px;
-  border: 2px solid #71c55d;
+  border: 2px solid #7db928;
   background: #fff;
-  color: #71c55d;
+  color: #7db928;
   text-decoration: none;
 }
 #hero .btn-get-started:hover {
-  background: #71c55d;
+  background: #7db928;
   color: #fff;
 }
 #hero .btns a {
@@ -441,7 +477,7 @@ span {
   }
 }
 #hero .btns a:hover {
-  color: #71c55d;
+  color: #7db928;
 }
 
 /*--------------------------------------------------------------
@@ -472,7 +508,7 @@ section {
 }
 
 .section-title h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-size: 45px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -486,7 +522,7 @@ section {
 
 .separator {
   color: #626262;
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 30px;
@@ -590,7 +626,7 @@ section {
   transition: 0.3s;
 }
 #get-started .feature-block a:hover {
-  color: #71c55d;
+  color: #7db928;
 }
 
 /* About Us Section
@@ -603,7 +639,7 @@ section {
 }
 #about-us .about-content h2 {
   color: #252525;
-  font-family: "roboto";
+  font-family: "Segoe UI";
   font-size: 39px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -662,10 +698,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #71c55d;
+  border: 1px solid #7db928;
 }
 #screenshots .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #71c55d;
+  background-color: #7db928;
 }
 
 /* Video Section
@@ -823,7 +859,7 @@ section {
   transition: 0.3s;
 }
 #team .team-block .team-content ul li a .fa:hover {
-  color: #71c55d;
+  color: #7db928;
 }
 #team .team-block .team-content ul > span {
   display: inline-block;
@@ -846,7 +882,7 @@ section {
 }
 
 #testimonials .testimonials-content::before {
-  color: #71c55d;
+  color: #7db928;
   content: "\f10e";
   display: inline-block;
   font: 70px/1 FontAwesome;
@@ -857,7 +893,7 @@ section {
 }
 
 #testimonials .top-top > h2 {
-  font-family: "Roboto" sans-serif;
+  font-family: "Segoe UI" sans-serif;
   font-size: 45px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -962,13 +998,13 @@ section {
 }
 
 #pricing .block-pricing .table .table_btn a {
-  background: #71c55d;
+  background: #7db928;
   color: #fff;
   margin: 0;
   display: inline-block;
 }
 #pricing .block-pricing .table .table_btn a:hover {
-  background: #55b03f;
+  background: #7db928;
 }
 
 #pricing .block-pricing .table .table_btn a .fa {
@@ -1010,7 +1046,7 @@ section {
   transition: 0.3s;
 }
 #blog .block-blog .content-blog h4 a:hover {
-  color: #71c55d;
+  color: #7db928;
 }
 
 #blog .block-blog .content-blog > span {
@@ -1028,7 +1064,7 @@ section {
   text-transform: capitalize;
 }
 #blog .block-blog .content-blog a.readmore:hover {
-  color: #71c55d;
+  color: #7db928;
 }
 
 /* Newsletter Section
@@ -1061,7 +1097,7 @@ section {
   }
 }
 #newsletter .form-control:focus {
-  border-color: #71c55d;
+  border-color: #7db928;
   box-shadow: none;
   outline: 0 none;
 }
@@ -1126,7 +1162,7 @@ section {
 }
 #contact .info i {
   font-size: 32px;
-  color: #71c55d;
+  color: #7db928;
   float: left;
   line-height: 0;
 }
@@ -1145,7 +1181,7 @@ section {
 #contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #71c55d;
+  background: #7db928;
   color: #fff;
   line-height: 1;
   padding: 6px 0 8px 0;
@@ -1156,7 +1192,7 @@ section {
   transition: 0.3s;
 }
 #contact .social-links a:hover {
-  background: #55b03f;
+  background: #7db928;
   color: #fff;
 }
 #contact .php-email-form .validate {
@@ -1209,7 +1245,7 @@ section {
   font-size: 14px;
 }
 #contact .php-email-form input:focus, #contact .php-email-form textarea:focus {
-  border-color: #71c55d;
+  border-color: #7db928;
 }
 #contact .php-email-form input {
   padding: 10px 15px;
@@ -1255,7 +1291,7 @@ section {
   color: #fff;
   display: inline-block;
   float: none;
-  font-family: "Philosopher", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-size: 24px;
   font-weight: 500;
   height: 100%;
