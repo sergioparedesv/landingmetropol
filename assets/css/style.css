@@ -8,7 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+/* @font-face {
+  font-family: VAG Rounded;
+  src: url('assets\fonts\VAG-Rounded-Std-Black.ttf')
+} */
 
 body {
   background-color: #fff;
@@ -106,6 +109,13 @@ span {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+
+
+.banner-fondo{
+  opacity: 0.5;
+  background: url("https://amvaeducacion.com/people.jpg");
+
+}
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -137,33 +147,34 @@ span {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: #7db928;
   z-index: 997;
   transition: all 0.5s ease;
   padding: 20px 0;
 }
 #header #logo h1 {
-  color: #505050;
+  color: #fff;
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0;
+  text-align: center;
 }
 #header #logo h1 a {
-  color: #555;
+  color: #fff;
   display: inline-block;
   text-decoration: none;
 }
 #header #logo h1 a span {
-  color: #006996;
-  font-family: "Segoe UI Bold", sans-serif;
+  color: #fff;
+  font-family: "VAG Rounded", sans-serif;
 }
 #header #logo img {
   padding: 0;
   margin: 0;
 }
 #header.header-scrolled {
-  background: #fff;
+  background: #7db928;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
   padding: 12px 0;
 }
@@ -206,6 +217,8 @@ span {
 
 .navbar {
   padding: 0;
+  margin-top: 20px;;
+  border-top: 1px solid #ddd;
 }
 .navbar ul {
   margin: 0;
@@ -213,6 +226,14 @@ span {
   display: flex;
   list-style: none;
   align-items: center;
+}
+
+.centrar-lista{
+  float: left;
+  margin: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  position: relative;
 }
 .navbar li {
   position: relative;
@@ -224,7 +245,7 @@ span {
   padding: 10px 0 10px 30px;
   font-family: "Segoe UI Bold", sans-serif;
   font-size: 15px;
-  color: #006996;
+  color: #fff;
   font-weight: bold;
   white-space: nowrap;
   transition: 0.3s;
@@ -236,7 +257,7 @@ span {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #71c55d;
+  color: #fff;
 }
 .navbar .dropdown ul {
   display: block;
@@ -294,6 +315,8 @@ span {
 /**
 * Mobile Navigation 
 */
+/* 
+
 .mobile-nav-toggle {
   color: #222;
   font-size: 28px;
@@ -333,14 +356,15 @@ span {
 }
 .navbar-mobile ul {
   display: block;
-  position: absolute;
+  position: right;
   top: 55px;
   right: 15px;
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: #7db928;
+  color: #fff;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -381,7 +405,7 @@ span {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
-
+ */
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -444,7 +468,7 @@ span {
 }
 #hero .btn-get-started {
   font-family: "Segoe UI", sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 400;
   font-size: 13px;
   letter-spacing: 1px;
@@ -1035,7 +1059,7 @@ section {
 #blog .block-blog .content-blog h4 {
   line-height: 24px;
   margin-bottom: 20px;
-  text-transform: capitalize;
+  text-transform: none;
   font-weight: normal;
   letter-spacing: 0;
   font-size: 16px;
@@ -1061,7 +1085,7 @@ section {
   text-decoration: none;
   transition: 0.3s;
   letter-spacing: 0;
-  text-transform: capitalize;
+  text-transform: none;
 }
 #blog .block-blog .content-blog a.readmore:hover {
   color: #7db928;
