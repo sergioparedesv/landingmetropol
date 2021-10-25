@@ -106,16 +106,22 @@ span {
   font-size: 13px;
 }
 
+.banner-fondo{
+  background: url("https://amvaeducacion.com/people.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+.boton-relleno{
+  padding: 20px;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 
 
-.banner-fondo{
-  opacity: 0.5;
-  background: url("https://amvaeducacion.com/people.jpg");
-
-}
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -150,7 +156,6 @@ span {
   background: #7db928;
   z-index: 997;
   transition: all 0.5s ease;
-  padding: 20px 0;
 }
 #header #logo h1 {
   color: #fff;
@@ -463,8 +468,7 @@ span {
   }
 }
 #hero img {
-  max-width: 95%;
-  margin-bottom: 30px;
+  max-width: 100%;
 }
 #hero .btn-get-started {
   font-family: "Segoe UI", sans-serif;
